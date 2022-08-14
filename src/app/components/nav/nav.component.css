@@ -1,0 +1,104 @@
+
+ .top-nav{
+   background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/5527a395e02754bb57746389_slider1.jpg);
+   height: 100vh;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+    margin: 1em;
+    width:  5em;
+}
+.top-nav ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav a, li {
+    text-decoration: none;
+    list-style-type: none;
+    align-self: center;
+    color: white;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+/*top tekst*/
+.top-tekst {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10em;
+}
+.top-tekst p:first-of-type {
+    font-weight: bold;
+    font-size: 3.5em;
+    text-align: right;
+}
+.top-tekst p {
+    margin-right: 2em;
+    color: white;
+}
+.top-tekst p:last-child {
+    margin-right: 6em;
+    text-align: right;
+}
+@media only screen and (max-width: 1000px) {
+   .top-nav  {
+    background-color: white;
+    height: 100vh;
+    }
+    .logo {
+        color: black;
+       
+    }
+    .top-nav ul {
+        display: none;
+    }
+    .top-nav li, a {
+        color: black;
+        text-align: center;
+        margin-top: 2.5em;
+    }
+    .top-nav a {
+        margin-top: 1em;;
+        color: black;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 1em;
+        transform :rotate(180deg);
+    }
+ 
+    /*top tekst*/
+    .top-tekst {
+      position: relative;  
+      top: 20em;
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .top-tekst p:first-of-type {
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .top-tekst p:last-child {
+        margin: 2em auto;
+        width: 75%;
+        text-align: center;
+    }
+  }

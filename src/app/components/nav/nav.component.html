@@ -1,0 +1,26 @@
+<div #topNav class="top-nav" > 
+    <nav>
+        <ul #theNav>
+            <li><img #logo class="logo" [src]="thelogo" alt="icon website"></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div #hamburger class="hamburger" (click)="hamburgerClick()">
+        <div class="hamburgerBar"></div>
+        <div class="hamburgerBar"></div>
+        <div class="hamburgerBar"></div>
+    </div>
+    <div #topTekst class="top-tekst">
+        <p #topTekstHeader [innerHTML]="HeaderToptext"></p>
+        <p><i #topTekstFooter [innerHTML]="topTextBottom"></i></p>
+    </div>
+</div>
+<app-top-mid id="home"></app-top-mid>
+<app-mid id="about"></app-mid>
+<app-box-image id="services"></app-box-image>
+<app-contact-form id="portfolio"></app-contact-form>
+<app-footer id="contact"></app-footer>

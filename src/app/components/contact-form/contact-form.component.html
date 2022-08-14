@@ -1,0 +1,22 @@
+<section>
+    <div class="container">
+        <h2>Write us a letter</h2>
+        <p><i>We appreciate youre ideas</i></p>
+        <form action="" method="post">
+            <div>
+                <label for="name">NAME</label>
+                <input type="text" name="name" placeholder="Enter your name" required #name>
+            </div>
+            <div>
+                <label for="name">EMAIL ADDRESS</label>
+                <input type="email" name="email" placeholder="Enter your email address" required  #email>
+            </div>
+            
+            <div>
+                <label for="name">YOUR MESSAGE</label>
+                <textarea type="text" name="name" placeholder="Example text" required #text></textarea>
+            </div>
+            <button type="submit" (click)="onFormBtnClick(name.value, email.value, text.value)">Submit</button>
+        </form> 
+    </div>
+</section>

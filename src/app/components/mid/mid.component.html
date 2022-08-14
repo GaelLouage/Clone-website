@@ -1,0 +1,33 @@
+<section>
+    <div class="container-mid">
+        <div *ngFor="let item of box">
+            <h2>{{item.number}}</h2>
+            <p><i>{{item.text}}</i></p>
+        </div>        
+    </div>
+    <div class="container-mid-bottom">
+        <img src="assets/Images/desk2.jpeg" alt="desk2">
+        <div class="box-text">
+            <h1>Things we do</h1>
+                <p><i>We exist to create</i></p>
+                <p>Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking disruptive user experience iPad social media angel investor alpha. Social proof lean startup alpha scrum project non-disclosure agreement.</p>
+                <button>GET IN TOUCH</button>
+        </div>
+      
+    </div>
+   
+</section>
+<div class="box-container">
+    <div  #theBox  class="box-text-bottom" *ngFor="let item of boxDrie">
+        <img [src]="item.image" [alt]="item.header">
+        <h2>{{item.header}}</h2>
+        <p>{{item.text}}</p>
+    </div>
+</div>
+<div class="mid-bottom">
+    <h2>Our clients <br>
+        love our work</h2>
+       <p><i>But don’t just take our word for it...</i></p>
+       <p>“I  don’t like people, but I make an exception for ABC Agency. They’re pretty damn cool.” <br>
+        Brian Jones,  America Big Corporation</p>
+</div>

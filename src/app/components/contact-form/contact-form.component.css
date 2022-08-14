@@ -1,0 +1,24 @@
+.container{
+    text-align: center;
+    margin: 5em 0;
+}
+h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.container div{
+    display: grid;
+    width: 50%;
+    margin: 2em auto;
+
+}
+label {
+    margin: 1em auto;
+}
+input {
+    height: 4em;
+}
+textarea {
+    height: 10em;
+}

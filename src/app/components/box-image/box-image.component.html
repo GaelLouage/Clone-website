@@ -1,0 +1,29 @@
+<section>
+    <div class="container-boxes">
+        <div class="top-tekst">
+            <h2>Latest <br> creations</h2>
+            <p><i>We make beautiful things</i></p>
+            <p>Focus infographic venture business model canvas gamification ecosystem. Business plan gamification user experience low hanging fruit twitter. Metrics research & development market paradigm shift growth hacking.</p>
+        </div>
+
+            <div class="container" *ngFor="let item of theBox" >
+                <img #myImg    [src]="item.img" [alt]="item.header" (click)="onImageClick(item.img)"/>
+                <div #myModal class="modal">
+                    <span #close (click)="hideModal()">&times;</span>
+                    <img class="modal-content" #img01>
+                  
+                    <div id="caption">
+                        <div *ngFor="let item of theBox" class="modal-content-bottom">
+                            <img [src]="item.img" (click)="bottomImagesModalChanger(item.img)">
+                        </div>
+                    </div>
+                </div>
+                  <div class="text" (click)="onImageClick(item.img)">
+                      <p>{{item.header}}</p>
+                      <p><small>{{item.text}}</small></p>
+                </div>
+              </div>
+    </div>
+</section>
+
+

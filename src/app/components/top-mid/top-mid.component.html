@@ -1,0 +1,12 @@
+<section>
+    <div class="container">
+            <img src="assets/Images/desk1.jpeg">
+            <div *ngFor="let item of textObject" class="box-text">
+                <h1>{{item.header}}</h1>
+                <p><i>{{item.italic}}</i></p>
+                <p>{{item.text}}</p>
+                <button>{{item.button}}</button>
+            </div>
+            <img src="assets/Images/desk2.jpeg">
+    </div>
+</section>
